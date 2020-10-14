@@ -55,7 +55,8 @@ const SsrPage = ({ randomPositiveInt }: SsrPageProps) => {
             <h1>This page was server-side rendered (SSR)!</h1>
             <Paragraph>This is always built when requested.</Paragraph>
             <Paragraph>
-              The button starts as if having been clicked {randomPositiveInt} time
+              The button starts as if having been clicked {randomPositiveInt}{' '}
+              time
               {randomPositiveInt === 1 ? '' : 's'}.
             </Paragraph>
             <Button onClick={incrementCounter}>

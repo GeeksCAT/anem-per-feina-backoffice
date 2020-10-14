@@ -60,7 +60,7 @@ const PageSection = ({ randomPositiveInt }: SgPageProps) => {
       <Paragraph>
         The button starts as if having been clicked -1 times, and updates as if
         having been clicked {randomPositiveInt} time
-        {randomPositiveInt === 1 ? '' : 's'}.
+        {randomPositiveInt === 1 ? ' ' : 's'}.
       </Paragraph>
       <Paragraph>
         Clicking the button also shows a loading indicator in the bottom right
@@ -68,7 +68,7 @@ const PageSection = ({ randomPositiveInt }: SgPageProps) => {
         this is a simple example.
       </Paragraph>
       <Button onClick={incrementCounter}>
-        This button has been clicked {counter} time{counter === 1 ? '' : 's'}!
+        This button has been clicked {counter} time {counter === 1 ? ' ' : 's'}!
       </Button>
     </section>
   );
