@@ -9,7 +9,6 @@ import {
   defaultKeywords,
 } from 'lib/constants';
 
-import 'styles/scss/styles.scss';
 
 const layoutProps = {
   title: defaultTitle,
@@ -17,9 +16,9 @@ const layoutProps = {
   keywords: defaultKeywords,
 };
 
-const Paragraph = styled.p.attrs({
-  className: 'main__description',
-})``;
+const Paragraph = styled.p`
+ margin: 2em 0;
+`;
 
 const IndexPage = () => {
   const [counter, setCounter] = useState(0);
